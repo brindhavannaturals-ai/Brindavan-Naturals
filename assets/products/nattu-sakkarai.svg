@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <rect width="800" height="600" fill="#F7F3E9"/>
+  <path d="M0 600 Q200 520 400 560 T800 540 V600 Z" fill="#8CBE3F" opacity="0.18"/>
+  <circle cx="680" cy="90" r="120" fill="#8CBE3F" opacity="0.12"/>
+  <g><path d="M310 240 h180 v30 a90 60 0 0 1 -180 0 z" fill="#c98f4e"/><ellipse cx="400" cy="240" rx="90" ry="22" fill="#285B52"/><path d="M340 380 q60 25 120 0" stroke="#8CBE3F" stroke-width="8" fill="none" stroke-linecap="round"/></g>
+  <text x="400" y="480" font-family="Segoe UI, sans-serif" font-size="30" font-weight="bold" fill="#285B52" text-anchor="middle">Nattu Sakkarai</text>
+  <text x="400" y="520" font-family="Segoe UI, sans-serif" font-size="18" fill="#a3a091" text-anchor="middle">Product photo coming soon</text>
+</svg>

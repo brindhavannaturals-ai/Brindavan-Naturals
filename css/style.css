@@ -1,0 +1,260 @@
+/* =========================================================================
+   Brindhavan Naturals — styles (mobile-first)
+   Palette sampled from the logo.
+   ========================================================================= */
+
+:root {
+  --green: #285b52;
+  --green-dark: #1e463f;
+  --orange: #f26a1e;
+  --orange-dark: #d95a12;
+  --lime: #8cbe3f;
+  --cream: #f7f3e9;
+  --ink: #1f2a24;
+  --white: #ffffff;
+  --wa-green: #25d366;
+  --radius: 14px;
+  --shadow: 0 4px 18px rgba(31, 42, 36, 0.1);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; scroll-padding-top: 84px; }
+
+body {
+  font-family: "Segoe UI", system-ui, -apple-system, "Noto Sans", sans-serif;
+  color: var(--ink);
+  background: var(--white);
+  line-height: 1.6;
+}
+
+img { max-width: 100%; display: block; }
+
+.container { width: min(1100px, 100% - 2rem); margin-inline: auto; }
+
+h1, h2, h3 { font-weight: 800; line-height: 1.2; }
+
+/* ---------- Buttons ---------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: none;
+  border-radius: 999px;
+  padding: 0.65rem 1.3rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.15s ease, background 0.15s ease;
+}
+.btn:active { transform: scale(0.97); }
+
+.btn-whatsapp { background: var(--wa-green); color: var(--white); }
+.btn-whatsapp:hover { background: #1fb857; }
+
+.btn-ghost {
+  background: transparent;
+  color: var(--white);
+  border: 2px solid var(--lime);
+}
+.btn-ghost:hover { background: rgba(140, 190, 63, 0.15); }
+
+.btn-lg { padding: 0.85rem 1.7rem; font-size: 1.05rem; }
+
+.wa-icon {
+  width: 1.15em;
+  height: 1.15em;
+  flex: none;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.2 14.2c-.2.6-1.2 1.2-1.7 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5s.8 1.9.8 2c.1.1.1.3 0 .5l-.4.6c-.1.2-.3.3-.1.6.2.3.8 1.4 1.8 2.2 1.2 1.1 2.2 1.4 2.6 1.6.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l2 1c.3.1.5.2.5.3.1.1.1.7-.1 1.3z"/></svg>') center/contain no-repeat;
+}
+
+.pill {
+  display: inline-block;
+  border-radius: 999px;
+  padding: 0.35rem 1.1rem;
+  font-weight: 800;
+}
+.pill-lime { background: var(--lime); color: var(--green-dark); font-size: 1.15rem; }
+.pill-n {
+  background: var(--orange);
+  color: var(--white);
+  border-radius: 50%;
+  padding: 0.05rem 0.4rem;
+}
+
+/* ---------- Header ---------- */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: var(--green);
+  box-shadow: var(--shadow);
+}
+.header-inner {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0.55rem 0;
+}
+.brand-logo { height: 48px; width: auto; border-radius: 8px; }
+.site-nav { display: none; gap: 1.4rem; margin-left: auto; }
+.site-nav a {
+  color: var(--cream);
+  text-decoration: none;
+  font-weight: 600;
+}
+.site-nav a:hover { color: var(--lime); }
+.header-cta { margin-left: auto; font-size: 0.85rem; padding: 0.5rem 1rem; }
+
+/* ---------- Hero ---------- */
+.hero {
+  background:
+    radial-gradient(1200px 500px at 80% -10%, rgba(140, 190, 63, 0.25), transparent 60%),
+    var(--green);
+  color: var(--white);
+  text-align: center;
+  padding: 3.5rem 0 4rem;
+}
+.hero-tamil { color: var(--lime); font-size: 1.05rem; margin-bottom: 0.6rem; }
+.hero h1 { font-size: clamp(2rem, 6vw, 3.4rem); }
+.hero-badge-line { margin: 1.1rem 0; }
+.hero-sub {
+  max-width: 34rem;
+  margin: 0 auto 1.8rem;
+  color: var(--cream);
+  font-size: 1.05rem;
+}
+.hero-actions { display: flex; flex-wrap: wrap; gap: 0.8rem; justify-content: center; }
+
+/* ---------- Trust strip ---------- */
+.trust-strip { background: var(--green-dark); color: var(--cream); padding: 0.9rem 0; }
+.trust-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem 1.6rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+.trust-item { display: flex; align-items: center; gap: 0.4rem; }
+.trust-ico { color: var(--lime); }
+
+/* ---------- Sections ---------- */
+.section { padding: 3.5rem 0; }
+.section-cream { background: var(--cream); }
+.section-green { background: var(--green); color: var(--cream); }
+
+.section-title {
+  font-size: clamp(1.6rem, 4.5vw, 2.3rem);
+  text-align: center;
+  color: var(--green);
+}
+.section-title.light { color: var(--white); }
+.section-title .accent { color: var(--orange); }
+.section-sub {
+  text-align: center;
+  max-width: 36rem;
+  margin: 0.6rem auto 2.2rem;
+  color: #5b6b62;
+}
+.section-green .section-sub { color: var(--cream); }
+
+/* ---------- Product cards ---------- */
+.card-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.4rem;
+}
+.card {
+  background: var(--white);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+}
+.card-img-wrap { aspect-ratio: 4 / 3; background: var(--cream); }
+.card-img-wrap img { width: 100%; height: 100%; object-fit: cover; }
+.card-body {
+  padding: 1.1rem 1.2rem 1.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  flex: 1;
+}
+.card-body h3 { color: var(--green); font-size: 1.15rem; }
+.card-blurb { font-size: 0.92rem; color: #4c5a52; flex: 1; }
+
+.size-picker { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.size-pill {
+  border: 2px solid var(--green);
+  background: transparent;
+  color: var(--green);
+  border-radius: 999px;
+  padding: 0.35rem 0.9rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+.size-pill.active { background: var(--green); color: var(--white); }
+
+.card-order { justify-content: center; margin-top: 0.3rem; }
+
+.delivery-note {
+  text-align: center;
+  margin-top: 2rem;
+  font-weight: 600;
+  color: var(--green);
+}
+
+/* ---------- About ---------- */
+.about-inner { max-width: 44rem; }
+.about-inner p { margin-top: 1.1rem; font-size: 1.02rem; }
+.about-inner .section-title { margin-bottom: 0.5rem; }
+.about-inner strong { color: var(--lime); }
+.about-sign { font-weight: 700; color: var(--lime); }
+
+/* ---------- Contact ---------- */
+.contact-grid { display: grid; grid-template-columns: 1fr; gap: 1.8rem; }
+.contact-info { display: flex; flex-direction: column; gap: 0.9rem; align-items: flex-start; }
+.contact-line a { color: var(--orange); font-weight: 700; text-decoration: none; }
+.contact-line.small { font-size: 0.9rem; }
+.contact-map iframe {
+  width: 100%;
+  height: 280px;
+  border: 0;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+/* ---------- Footer ---------- */
+.site-footer {
+  background: var(--green-dark);
+  color: var(--cream);
+  text-align: center;
+  padding: 2.5rem 0 2rem;
+  font-size: 0.92rem;
+}
+.footer-inner { display: flex; flex-direction: column; gap: 0.35rem; align-items: center; }
+.footer-logo { height: 56px; width: auto; border-radius: 8px; margin-bottom: 0.8rem; }
+.site-footer a { color: var(--lime); text-decoration: none; font-weight: 600; }
+.fssai { margin-top: 0.6rem; }
+.fssai-placeholder { color: var(--orange); font-weight: 700; }
+.copyright { margin-top: 0.8rem; opacity: 0.7; font-size: 0.82rem; }
+
+/* ---------- Tablet & up ---------- */
+@media (min-width: 640px) {
+  .card-grid { grid-template-columns: repeat(2, 1fr); }
+  .header-cta { font-size: 0.95rem; }
+}
+
+/* ---------- Desktop ---------- */
+@media (min-width: 900px) {
+  .site-nav { display: flex; }
+  .header-cta { margin-left: 1.5rem; }
+  .card-grid { grid-template-columns: repeat(3, 1fr); }
+  .card-grid-small { grid-template-columns: repeat(3, 1fr); }
+  .contact-grid { grid-template-columns: 1fr 1.2fr; align-items: center; }
+}
