@@ -102,6 +102,12 @@ document.querySelectorAll(".about-inner p").forEach((el, i) => {
   el.style.transitionDelay = `${i * 100}ms`;
 });
 
+document.querySelectorAll(".process-step").forEach((el, i) => {
+  el.classList.add("reveal");
+  el.dataset.reveal = "zoom";
+  el.style.transitionDelay = `${i * 150}ms`;
+});
+
 document.querySelectorAll(".contact-info").forEach((el) => {
   el.classList.add("reveal");
   el.dataset.reveal = "left";

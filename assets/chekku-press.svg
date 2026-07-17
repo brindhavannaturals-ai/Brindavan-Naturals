@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 560">
+  <style>
+    .grind {
+      transform-origin: 350px 310px;
+      animation: grind 3.6s ease-in-out infinite;
+    }
+    @keyframes grind {
+      0%, 100% { transform: rotate(-5deg); }
+      50% { transform: rotate(5deg); }
+    }
+    .drop {
+      animation: drip 2.4s linear infinite;
+      opacity: 0;
+    }
+    .drop.d2 { animation-delay: 0.8s; }
+    .drop.d3 { animation-delay: 1.6s; }
+    @keyframes drip {
+      0%   { transform: translateY(0);    opacity: 0; }
+      12%  { opacity: 1; }
+      78%  { transform: translateY(86px); opacity: 1; }
+      100% { transform: translateY(96px); opacity: 0; }
+    }
+    .leaf-sway {
+      transform-origin: 120px 120px;
+      animation: sway 4.5s ease-in-out infinite;
+    }
+    @keyframes sway {
+      0%, 100% { transform: rotate(-4deg); }
+      50% { transform: rotate(5deg); }
+    }
+    .shine {
+      animation: shine 5s ease-in-out infinite;
+    }
+    @keyframes shine {
+      0%, 100% { opacity: 0.25; }
+      50% { opacity: 0.5; }
+    }
+  </style>
+
+  <!-- soft glow backdrop -->
+  <circle cx="350" cy="290" r="230" fill="#8CBE3F" opacity="0.12"/>
+  <circle cx="575" cy="105" r="48" fill="#F26A1E" class="shine"/>
+
+  <!-- swaying palm leaf -->
+  <g class="leaf-sway" fill="#8CBE3F">
+    <path d="M120 120 q90 -70 190 -45 q-60 90 -190 45z"/>
+    <path d="M120 120 q70 -20 130 5 q-70 40 -130 -5z" opacity="0.7"/>
+  </g>
+
+  <!-- grinding pestle assembly (animated) -->
+  <g class="grind">
+    <!-- upright post -->
+    <rect x="335" y="120" width="30" height="200" rx="12" fill="#F7F3E9"/>
+    <!-- angled crossbeam -->
+    <path d="M348 132 L565 240 q14 8 6 22 q-8 12 -22 6 L340 160 z" fill="#F7F3E9"/>
+    <!-- beam handle knob -->
+    <circle cx="568" cy="252" r="18" fill="#F26A1E"/>
+    <!-- rope wrap -->
+    <path d="M336 200 h28 M336 214 h28" stroke="#8CBE3F" stroke-width="5" stroke-linecap="round"/>
+  </g>
+
+  <!-- mortar bowl (in front of pestle) -->
+  <g>
+    <path d="M225 300 h250 l-28 118 q-97 34 -194 0 z" fill="#8CBE3F"/>
+    <ellipse cx="350" cy="300" rx="125" ry="26" fill="#a9d55e"/>
+    <ellipse cx="350" cy="300" rx="92" ry="17" fill="#1e463f" opacity="0.55"/>
+    <!-- seeds inside rim -->
+    <g fill="#e8b64a">
+      <ellipse cx="315" cy="299" rx="12" ry="6"/>
+      <ellipse cx="352" cy="303" rx="11" ry="6"/>
+      <ellipse cx="385" cy="298" rx="12" ry="6"/>
+    </g>
+    <!-- spout -->
+    <path d="M232 340 q-24 4 -30 22 q18 10 34 -2 z" fill="#8CBE3F"/>
+  </g>
+
+  <!-- oil drops falling from spout -->
+  <g fill="#F26A1E">
+    <path class="drop"    d="M206 372 q7 10 0 17 q-7 -7 0 -17z" transform="translate(0 0)"/>
+    <path class="drop d2" d="M206 372 q7 10 0 17 q-7 -7 0 -17z"/>
+    <path class="drop d3" d="M206 372 q7 10 0 17 q-7 -7 0 -17z"/>
+  </g>
+
+  <!-- collecting pot -->
+  <g>
+    <path d="M168 478 q0 -14 14 -14 h48 q14 0 14 14 q0 30 -38 30 q-38 0 -38 -30z" fill="#1e463f"/>
+    <ellipse cx="206" cy="464" rx="38" ry="10" fill="#F26A1E"/>
+    <ellipse cx="206" cy="464" rx="28" ry="6" fill="#f5913f"/>
+  </g>
+
+  <!-- seed pile beside bowl -->
+  <g fill="#e8b64a">
+    <ellipse cx="505" cy="440" rx="16" ry="9" transform="rotate(-12 505 440)"/>
+    <ellipse cx="532" cy="448" rx="15" ry="8" transform="rotate(10 532 448)"/>
+    <ellipse cx="516" cy="454" rx="14" ry="8"/>
+  </g>
+  <!-- coconut half -->
+  <g transform="translate(575 445)">
+    <circle r="24" fill="#6b4326"/>
+    <circle r="17" fill="#F7F3E9"/>
+    <circle r="6" fill="#efe7cd"/>
+  </g>
+
+  <!-- ground -->
+  <ellipse cx="360" cy="505" rx="290" ry="15" fill="#1e463f" opacity="0.5"/>
+</svg>
