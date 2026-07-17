@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 560">
+  <defs>
+    <linearGradient id="glassCoco" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fbf7e8"/><stop offset="1" stop-color="#efe7cd"/>
+    </linearGradient>
+    <linearGradient id="glassNut" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f2c14e"/><stop offset="1" stop-color="#dfa22e"/>
+    </linearGradient>
+    <linearGradient id="glassSes" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e08a3c"/><stop offset="1" stop-color="#c96d20"/>
+    </linearGradient>
+  </defs>
+
+  <!-- soft backdrop -->
+  <circle cx="360" cy="290" r="240" fill="#8CBE3F" opacity="0.16"/>
+  <circle cx="360" cy="290" r="185" fill="#8CBE3F" opacity="0.14"/>
+
+  <!-- leaves -->
+  <g fill="#8CBE3F" opacity="0.85">
+    <path d="M105 150 q60 -60 130 -40 q-40 70 -130 40z"/>
+    <path d="M615 130 q-60 -55 -125 -38 q38 66 125 38z" opacity="0.7"/>
+    <path d="M90 420 q50 45 115 35 q-30 -62 -115 -35z" opacity="0.6"/>
+  </g>
+
+  <!-- groundnut oil (left, mid height) -->
+  <g transform="translate(150 175)">
+    <rect x="52" y="0" width="46" height="42" rx="8" fill="#285B52"/>
+    <path d="M40 42 h70 c16 20 24 36 24 64 v130 a22 22 0 0 1 -22 22 h-74 a22 22 0 0 1 -22 -22 v-130 c0 -28 8 -44 24 -64 z" fill="url(#glassNut)"/>
+    <rect x="30" y="112" width="90" height="78" rx="9" fill="#285B52"/>
+    <text x="75" y="144" font-family="Segoe UI, sans-serif" font-size="14" font-weight="bold" fill="#F7F3E9" text-anchor="middle">Brindhavan</text>
+    <text x="75" y="163" font-family="Segoe UI, sans-serif" font-size="12" fill="#8CBE3F" text-anchor="middle">GROUNDNUT</text>
+    <path d="M46 60 q-6 40 0 80" stroke="#ffffff" stroke-width="6" opacity="0.35" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- coconut oil (center, tallest) -->
+  <g transform="translate(280 105)">
+    <rect x="62" y="0" width="52" height="48" rx="9" fill="#285B52"/>
+    <path d="M48 48 h80 c18 23 28 42 28 74 v160 a24 24 0 0 1 -24 24 h-88 a24 24 0 0 1 -24 -24 v-160 c0 -32 10 -51 28 -74 z" fill="url(#glassCoco)"/>
+    <rect x="36" y="134" width="104" height="92" rx="10" fill="#285B52"/>
+    <text x="88" y="172" font-family="Segoe UI, sans-serif" font-size="16" font-weight="bold" fill="#F7F3E9" text-anchor="middle">Brindhavan</text>
+    <text x="88" y="193" font-family="Segoe UI, sans-serif" font-size="13" fill="#8CBE3F" text-anchor="middle">COCONUT</text>
+    <path d="M54 70 q-7 46 0 94" stroke="#ffffff" stroke-width="7" opacity="0.5" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- sesame oil (right) -->
+  <g transform="translate(430 195)">
+    <rect x="50" y="0" width="44" height="40" rx="8" fill="#285B52"/>
+    <path d="M38 40 h68 c15 19 23 34 23 60 v124 a21 21 0 0 1 -21 21 h-72 a21 21 0 0 1 -21 -21 v-124 c0 -26 8 -41 23 -60 z" fill="url(#glassSes)"/>
+    <rect x="28" y="104" width="88" height="74" rx="9" fill="#285B52"/>
+    <text x="72" y="135" font-family="Segoe UI, sans-serif" font-size="13.5" font-weight="bold" fill="#F7F3E9" text-anchor="middle">Brindhavan</text>
+    <text x="72" y="153" font-family="Segoe UI, sans-serif" font-size="11.5" fill="#8CBE3F" text-anchor="middle">SESAME</text>
+    <path d="M44 56 q-5 38 0 76" stroke="#ffffff" stroke-width="5" opacity="0.35" fill="none" stroke-linecap="round"/>
+  </g>
+
+  <!-- ground line + produce -->
+  <ellipse cx="360" cy="505" rx="270" ry="16" fill="#1e463f" opacity="0.35"/>
+  <!-- coconut half -->
+  <g transform="translate(205 465)">
+    <circle r="30" fill="#6b4326"/>
+    <circle r="22" fill="#fbf7e8"/>
+    <circle r="8" fill="#efe7cd"/>
+  </g>
+  <!-- groundnuts -->
+  <g fill="#c99b56">
+    <ellipse cx="320" cy="492" rx="16" ry="10" transform="rotate(-15 320 492)"/>
+    <ellipse cx="350" cy="500" rx="15" ry="9" transform="rotate(12 350 500)"/>
+  </g>
+  <!-- sesame spoon -->
+  <g transform="translate(475 480)">
+    <ellipse cx="0" cy="0" rx="28" ry="14" fill="#8a5a33"/>
+    <ellipse cx="0" cy="-3" rx="22" ry="9" fill="#e8d9a8"/>
+    <rect x="24" y="-4" width="52" height="8" rx="4" fill="#8a5a33" transform="rotate(18 24 -4)"/>
+  </g>
+</svg>

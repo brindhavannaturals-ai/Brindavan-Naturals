@@ -74,3 +74,57 @@ document.querySelectorAll("[data-wa-generic]").forEach((a) => {
 
 /* Footer year */
 document.getElementById("year").textContent = new Date().getFullYear();
+
+/* ---------- Scroll-reveal animations ---------- */
+/* Tag elements that should animate in as they enter the viewport. */
+const REVEAL_DIRECTIONS = ["left", "up", "right"];
+
+document.querySelectorAll(".section-title, .section-sub, .delivery-note").forEach((el) => {
+  el.classList.add("reveal");
+});
+
+document.querySelectorAll(".trust-item").forEach((el, i) => {
+  el.classList.add("reveal");
+  el.dataset.reveal = "zoom";
+  el.style.transitionDelay = `${i * 90}ms`;
+});
+
+document.querySelectorAll(".card-grid").forEach((grid) => {
+  [...grid.children].forEach((card, i) => {
+    card.classList.add("reveal");
+    card.dataset.reveal = REVEAL_DIRECTIONS[i % REVEAL_DIRECTIONS.length];
+    card.style.transitionDelay = `${(i % 3) * 120}ms`;
+  });
+});
+
+document.querySelectorAll(".about-inner p").forEach((el, i) => {
+  el.classList.add("reveal");
+  el.style.transitionDelay = `${i * 100}ms`;
+});
+
+document.querySelectorAll(".contact-info").forEach((el) => {
+  el.classList.add("reveal");
+  el.dataset.reveal = "left";
+});
+document.querySelectorAll(".contact-map").forEach((el) => {
+  el.classList.add("reveal");
+  el.dataset.reveal = "right";
+});
+
+if (!("IntersectionObserver" in window)) {
+  document.querySelectorAll(".reveal").forEach((el) => el.classList.add("in-view"));
+}
+
+const revealObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("in-view");
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  },
+  { threshold: 0.15, rootMargin: "0px 0px -40px 0px" }
+);
+
+document.querySelectorAll(".reveal").forEach((el) => revealObserver.observe(el));
