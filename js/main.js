@@ -30,6 +30,10 @@ function productCard(product, eager) {
     )
     .join("");
 
+  const highlightTags = (product.highlights || [])
+    .map((h) => `<span class="highlight-tag">${h}</span>`)
+    .join("");
+
   card.innerHTML = `
     <div class="card-img-wrap">
       <img src="${product.image}" alt="${product.name}" loading="${eager ? "eager" : "lazy"}" />
@@ -37,6 +41,7 @@ function productCard(product, eager) {
     <div class="card-body">
       <h3>${product.name}</h3>
       <p class="card-blurb">${product.blurb}</p>
+      <div class="card-highlights">${highlightTags}</div>
       <div class="size-picker" role="group" aria-label="Choose size">${sizeButtons}</div>
       <a class="btn btn-whatsapp card-order" href="#" target="_blank" rel="noopener">
         <span class="wa-icon" aria-hidden="true"></span>Order on WhatsApp
