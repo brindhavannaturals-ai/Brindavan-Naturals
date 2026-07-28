@@ -11,7 +11,7 @@ const OILS = [
   {
     name: "Cold-Pressed Coconut Oil",
     blurb: "Sweet-smelling, crystal-clear oil from sun-dried copra. Perfect for cooking, hair & skin.",
-    image: "assets/products/coconut-oil.svg",
+    image: "assets/products/coconut-oil.jpg",
     sizes: [
       { label: "500 ml", price: 190 },
       { label: "1 Litre", price: 380 },
@@ -20,7 +20,7 @@ const OILS = [
   {
     name: "Cold-Pressed Groundnut Oil",
     blurb: "Rich, nutty flavour that takes everyday cooking back to grandma's kitchen.",
-    image: "assets/products/groundnut-oil.svg",
+    image: "assets/products/groundnut-oil.jpg",
     sizes: [
       { label: "500 ml", price: 175 },
       { label: "1 Litre", price: 350 },
@@ -29,7 +29,7 @@ const OILS = [
   {
     name: "Cold-Pressed Sesame Oil",
     blurb: "Traditional nallennai — deep aroma, ideal for cooking, pickles and oil baths.",
-    image: "assets/products/sesame-oil.svg",
+    image: "assets/products/sesame-oil.jpg",
     sizes: [
       { label: "500 ml", price: 210 },
       { label: "1 Litre", price: 420 },
@@ -42,7 +42,7 @@ const PROVISIONS = [
   {
     name: "Marthandam Honey",
     blurb: "Pure multi-floral honey from the Marthandam hills.",
-    image: "assets/products/honey.svg",
+    image: "assets/products/honey.jpg",
     sizes: [
       { label: "500 g", price: 160 },
       { label: "1 kg", price: 320 },
@@ -51,7 +51,7 @@ const PROVISIONS = [
   {
     name: "Panam Karupatti (Palm Jaggery)",
     blurb: "Unrefined palm jaggery — nature's healthy sweetener.",
-    image: "assets/products/karupatti.svg",
+    image: "assets/products/karupatti.jpg",
     sizes: [
       { label: "500 g", price: 240 },
       { label: "1 kg", price: 470 },
@@ -68,7 +68,7 @@ const PROVISIONS = [
   {
     name: "Nattu Sakkarai (Country Sugar)",
     blurb: "Golden unrefined cane sugar with natural minerals.",
-    image: "assets/products/nattu-sakkarai.svg",
+    image: "assets/products/nattu-sakkarai.jpg",
     sizes: [
       { label: "500 g", price: 40 },
       { label: "1 kg", price: 80 },
@@ -77,7 +77,7 @@ const PROVISIONS = [
   {
     name: "Himalayan Pink Salt",
     blurb: "Mineral-rich rock salt, ground fine for daily use.",
-    image: "assets/products/pink-salt.svg",
+    image: "assets/products/pink-salt.jpg",
     sizes: [
       { label: "1 kg", price: 80 },
     ],
