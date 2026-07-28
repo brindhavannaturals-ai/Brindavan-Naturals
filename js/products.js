@@ -37,8 +37,35 @@ const OILS = [
   },
 ];
 
-/* More natural products */
+/* More natural products
+   Order matters: rendered in a 3-column grid, so this order controls
+   which products share a row (row 1 = first 3, row 2 = next 2, etc). */
 const PROVISIONS = [
+  {
+    name: "Panam Kalkandu (Palm Candy)",
+    blurb: "Crunchy palm sugar candy, gentle on the throat.",
+    image: "assets/products/kalkandu.jpg",
+    sizes: [
+      { label: "200 g", price: 160 },
+    ],
+  },
+  {
+    name: "Himalayan Pink Salt",
+    blurb: "Mineral-rich rock salt, ground fine for daily use.",
+    image: "assets/products/pink-salt.jpg",
+    sizes: [
+      { label: "1 kg", price: 80 },
+    ],
+  },
+  {
+    name: "Nattu Sakkarai (Country Sugar)",
+    blurb: "Golden unrefined cane sugar with natural minerals.",
+    image: "assets/products/nattu-sakkarai.jpg",
+    sizes: [
+      { label: "500 g", price: 40 },
+      { label: "1 kg", price: 80 },
+    ],
+  },
   {
     name: "Marthandam Honey",
     blurb: "Pure multi-floral honey from the Marthandam hills.",
@@ -55,31 +82,6 @@ const PROVISIONS = [
     sizes: [
       { label: "500 g", price: 240 },
       { label: "1 kg", price: 470 },
-    ],
-  },
-  {
-    name: "Panam Kalkandu (Palm Candy)",
-    blurb: "Crunchy palm sugar candy, gentle on the throat.",
-    image: "assets/products/kalkandu.jpg",
-    sizes: [
-      { label: "200 g", price: 160 },
-    ],
-  },
-  {
-    name: "Nattu Sakkarai (Country Sugar)",
-    blurb: "Golden unrefined cane sugar with natural minerals.",
-    image: "assets/products/nattu-sakkarai.jpg",
-    sizes: [
-      { label: "500 g", price: 40 },
-      { label: "1 kg", price: 80 },
-    ],
-  },
-  {
-    name: "Himalayan Pink Salt",
-    blurb: "Mineral-rich rock salt, ground fine for daily use.",
-    image: "assets/products/pink-salt.jpg",
-    sizes: [
-      { label: "1 kg", price: 80 },
     ],
   },
 ];

@@ -288,7 +288,6 @@ h1, h2, h3 { font-weight: 800; line-height: 1.2; }
 .footer-logo { height: 80px; width: auto; border-radius: 8px; margin-bottom: 0.8rem; }
 .site-footer a { color: var(--lime); text-decoration: none; font-weight: 600; }
 .fssai { margin-top: 0.6rem; }
-.fssai-placeholder { color: var(--orange); font-weight: 700; }
 .copyright { margin-top: 0.8rem; opacity: 0.7; font-size: 0.82rem; }
 
 /* ---------- Scroll-reveal animations ---------- */
