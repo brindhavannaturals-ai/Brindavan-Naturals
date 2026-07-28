@@ -176,6 +176,7 @@ h1, h2, h3 { font-weight: 800; line-height: 1.2; }
 }
 .card {
   background: var(--white);
+  border: 1px solid rgba(40, 91, 82, 0.1);
   border-radius: var(--radius);
   overflow: hidden;
   box-shadow: var(--shadow);
@@ -195,10 +196,10 @@ h1, h2, h3 { font-weight: 800; line-height: 1.2; }
   gap: 0.7rem;
   flex: 1;
 }
-.card-body h3 { color: var(--green); font-size: 1.25rem; }
-.card-blurb { font-size: 1rem; color: #4c5a52; flex: 1; }
+.card-body h3 { color: var(--green); font-size: 1.25rem; min-height: 2.6rem; }
+.card-blurb { font-size: 1rem; color: #4c5a52; min-height: 3.2rem; }
 
-.size-picker { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.size-picker { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: auto; }
 .size-pill {
   border: 2px solid var(--green);
   background: transparent;
