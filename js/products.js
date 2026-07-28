@@ -60,7 +60,7 @@ const PROVISIONS = [
   {
     name: "Panam Kalkandu (Palm Candy)",
     blurb: "Crunchy palm sugar candy, gentle on the throat.",
-    image: "assets/products/kalkandu.svg",
+    image: "assets/products/kalkandu.jpg",
     sizes: [
       { label: "200 g", price: 160 },
     ],
